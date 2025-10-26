@@ -24,7 +24,7 @@ document.querySelector('.twitter')?.addEventListener('click', () => {
 });
 
 document.querySelector('.snapchat')?.addEventListener('click', () => {
-  window.open('https://www.snapchat.com/add/yourusername', '_blank', 'noopener,noreferrer');
+  window.open('https://snapchat.com/t/t9sOUN0b', '_blank', 'noopener,noreferrer');
 });
 
 document.querySelector('.instagram')?.addEventListener('click', () => {
