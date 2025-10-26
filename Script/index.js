@@ -19,6 +19,25 @@ if (darkModeBtn) {
   });
 }
 
+document.querySelector('.twitter')?.addEventListener('click', () => {
+  window.open('https://x.com/brunolinlcoln?s=21', '_blank', 'noopener,noreferrer');
+});
+
+document.querySelector('.snapchat')?.addEventListener('click', () => {
+  window.open('https://www.snapchat.com/add/yourusername', '_blank', 'noopener,noreferrer');
+});
+
+document.querySelector('.instagram')?.addEventListener('click', () => {
+  window.open('https://www.instagram.com/slime_bruno8?igsh=bzA0M2kxbG9lNHp2&utm_source=qr', '_blank', 'noopener,noreferrer');
+});
+
+document.querySelector('.facebook')?.addEventListener('click', () => {
+  window.open('https://www.facebook.com/share/1CM8rFF9Gn/?mibextid=wwXIfr', '_blank', 'noopener,noreferrer');
+});
+
+document.querySelector('.tiktok')?.addEventListener('click', () => {
+  window.open('https://www.tiktok.com/@abdullah08138?_t=ZS-90spT6CQflS&_r=1', '_blank', 'noopener,noreferrer');
+});
 
 
 

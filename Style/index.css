@@ -149,7 +149,48 @@ button {
 button:hover {
   background: #0056b3;
 }
-
+#social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px;
+  margin-top: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.twitter {
+  background-color: #010101;
+}       
+.snapchat { 
+  background-color: #FFFC00; 
+}  
+.instagram { 
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  background-size: 200% 200%;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-position 0.3s ease, transform 0.2s ease 
+} 
+.instagram:hover {
+  background-position: right center;
+  transform: scale(1.05);
+}
+.facebook {
+  background-color: #1877F2; 
+}  
+.tiktok { 
+  background-color: #010101; 
+} 
+#social:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
 footer {
   text-align: center;
@@ -162,7 +203,6 @@ footer {
   header {
     flex-direction: column;
   }
-
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -171,5 +211,9 @@ footer {
 @media (min-width: 769px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  #social {
+    width: 30%; 
+    margin-left: 30%;
   }
 }
