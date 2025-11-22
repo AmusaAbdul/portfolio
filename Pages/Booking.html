@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings Page</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+   <div class="container">
+    <nav class="navbar">
+        <div class="logo-box">
+            <h3 class="logo">Ikemi's Concept</h3>
+        </div>
+        <ul class="nav-links desktop">
+            <li><a href="../index.html"> Back home</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links mobile">
+            <li><a href="../index.html">Back home</a></li> <hr>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>BOOK A MAKEUP SESSION</h2>
+        <form action="" class="booking-form">
+            <label for="FullName" class="fullname">
+                Full Name:
+                <input type="Fullname" required>
+            </label>
+            <label for="Email" class="email">
+                Email:
+                <input type="Email" required>
+            </label>
+            <label for="Service" class="booking-service">
+                Service:
+                <select name="" >
+                    <option value="Choose">Choose</option>
+                    <option value="Bridal">Bridal</option>
+                    <option value="Soft Glam">Soft Glam</option>
+                    <option value="Party Glam">Party Glam</option>
+                    <option value="Photoshoot">Photoshoot</option>
+                </select>
+            </label>
+            <div style="display: flex; gap: 10px;">
+                <label for="Date" class="date">
+                    Date:
+                    <input type="Date" required>
+                </label>
+                <label for="Time" class="time">
+                    Time
+                    <input type="Time" name="time" required>
+                </label>
+            </div>
+            <div class="bookingbtn">
+                <button>Confirm Booking</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <h4>© <span id="year"></span> Ikemi's concept</h4>
+        <div>
+            <div class="footerbtn">
+                <button class="social instagram">
+                    <svg role="img" aria-labelledby="igTitle" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <title id="igTitle">Instagram</title>
+                        <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+                        <circle cx="12" cy="12" r="3.2"></circle>
+                        <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"></circle>
+                    </svg>
+                </button>
+                <button class="social whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-labelledby="waOutline">
+                        <title id="waOutline">WhatsApp icon</title>
+                        <path d="M20.52 3.48A11.95 11.95 0 0 0 12 .5 11.95 11.95 0 0 0 3.48 3.48 11.95 11.95 0 0 0 .5 12c0 2.1.56 4.08 1.62 5.83L.5 23l4.51-1.4A11.95 11.95 0 0 0 12 23.5c3.18 0 6.16-1.24 8.52-3.48A11.95 11.95 0 0 0 23.5 12 11.95 11.95 0 0 0 20.52 3.48zM12 21c-8 0-9-7-9-9a9 9 0 0 1 18 0c0 2-1 9-9 9z" fill="currentColor"/>
+                        <path d="M17 14.5c-.5-.3-2.9-1.5-3.4-1.6-.5-.1-1-.1-1.5.5-.5.6-.6 1-1.4 1.1-.8.1-1.7-.7-3.6-2.6-1.4-1.4-2-2.9-1.8-3.6.2-.6.8-1 1.1-1.3.3-.3.6-.4 1-.5.3-.1.6 0 .9.4.2.3.6 1 1 1.6.4.6.8 1 .9 1.2.1.2.1.3 0 .6-.1.3-.2.6-.3.9-.1.3 0 .6.3.9.4.4 1 .8 1.7 1.2.7.4 1.3.5 1.8.4.5-.1 1-.4 1.3-.6.2-.2.3-.3.6-.1.2.2 1 1.2 1.2 1.5.2.3.3.5.2.7-.1.2-.6.4-1.1.1z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <button class="social x">
+                    <svg width="24" height="24" viewBox="0 0 24 24" 
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                        <path d="M18.244 2H21.5l-7.52 8.59L23 22h-6.844l-5.351-6.934L4.5 22H1.243l8.033-9.17L1 2h6.97l4.743 6.231L18.244 2zm-2.404 17.403h1.799L7.516 4.51H5.59l10.25 14.893z"/>
+                    </svg>
+                </button>
+                <button class="social tiktok">
+                    <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M33.5 14.5V28C32.5 27.7 31.5 27.5 30.5 27.5C27 27.5 24 30.5 24 34C24 37.5 27 40.5 30.5 40.5C34 40.5 37 37.5 37 34V18H33.5V14.5Z" fill="#25F4EE"/>
+                        <path d="M33.5 14.5V28C32.5 27.7 31.5 27.5 30.5 27.5C27 27.5 24 30.5 24 34C24 37.5 27 40.5 30.5 40.5C34 40.5 37 37.5 37 34V18H33.5V14.5Z" fill="#FE2C55" transform="translate(-1,-1)"/>
+                        <path d="M33.5 14.5V28C32.5 27.7 31.5 27.5 30.5 27.5C27 27.5 24 30.5 24 34C24 37.5 27 40.5 30.5 40.5C34 40.5 37 37.5 37 34V18H33.5V14.5Z" fill="#010101"/>
+                    </svg>
+                </button>
+                <button class="social snapchat">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2c-2.6 0-5 2-5 5v1.2c0 .5-.3 1-.7 1.2C5 9.8 4 10.7 4 12c0 1.3 1 2.2 2.3 2.6.3.1.5.4.5.7-.1 1.2-.8 1.9-1.8 2.2-.5.2-.8.5-.8.9 0 .5.5.9 1.1.9.6 0 1.2-.2 1.9-.2.8 1.6 2.7 3 5.8 3s5-1.4 5.8-3c.7 0 1.3.2 1.9.2.6 0 1.1-.4 1.1-.9 0-.4-.3-.7-.8-.9-1-.3-1.7-1-1.8-2.2 0-.3.2-.6.5-.7C19 14.2 20 13.3 20 12c0-1.3-1-2.2-2.3-2.6-.4-.1-.7-.7-.7-1.2V7c0-3-2.4-5-5-5z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Script/booking.js"></script>
+</body>
+</html>
