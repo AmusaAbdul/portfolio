@@ -149,9 +149,19 @@ button {
 button:hover {
   background: #0056b3;
 }
+.social {
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: none;
+  transition: all 0.3s ease;
+}
 #social {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   background: var(--card-bg);
   border-radius: 12px;
@@ -162,31 +172,46 @@ button:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .twitter {
-  background-color: #010101;
-}       
+  background-color: black;
+}     
+.twitter:hover {
+  background-color: black;
+  transform: scale(1.05);
+}  
 .snapchat { 
   background-color: #FFFC00; 
 }  
+.snapchat:hover {
+  background-color: #FFFC00;
+  transform: scale(1.05);
+}
 .instagram { 
-  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-  background-size: 200% 200%;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-position 0.3s ease, transform 0.2s ease 
-} 
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);;
+}
 .instagram:hover {
-  background-position: right center;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);;
   transform: scale(1.05);
 }
 .facebook {
   background-color: #1877F2; 
 }  
+.facebook:hover {
+  background-color: #1877F2;
+}
 .tiktok { 
-  background-color: #010101; 
+  background-color: black; 
+}
+.tiktok:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+.whatsapp {
+  background-color: green;
 } 
+.whatsapp:hover {
+  background-color: green;
+  transform: scale(1.05);
+}
 #social:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
