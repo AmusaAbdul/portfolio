@@ -19,6 +19,8 @@ if (darkModeBtn) {
   });
 }
 
+document.getElementById("year").textContent = new Date().getFullYear();
+
 document.querySelector('.twitter')?.addEventListener('click', () => {
   window.open('https://x.com/brunolinlcoln?s=21', '_blank', 'noopener,noreferrer');
 });
