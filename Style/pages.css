@@ -14,7 +14,6 @@ body.dark-mode {
   --shadow-color: rgba(0, 0, 0, 0.4);
 }
 
-
 body {
   font-family: "Poppins", Arial, sans-serif;
   background-color: var(--bg-color);
@@ -25,8 +24,8 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-
-main, .container {
+main,
+.container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
@@ -34,7 +33,6 @@ main, .container {
   margin: 40px auto;
   padding: 0 20px;
 }
-
 
 .card {
   background: var(--card-bg);
@@ -48,7 +46,6 @@ main, .container {
   transform: translateY(-5px);
   box-shadow: 0 8px 18px var(--shadow-color);
 }
-
 
 h2 {
   color: var(--accent-color);
@@ -65,7 +62,6 @@ p {
   margin: 10px 0;
   text-align: justify;
 }
-
 
 ul {
   list-style-type: none;
@@ -84,7 +80,6 @@ li:hover {
   background: rgba(0, 123, 255, 0.1);
 }
 
-
 form {
   display: flex;
   flex-direction: column;
@@ -95,7 +90,8 @@ label {
   font-weight: 600;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -105,7 +101,8 @@ input, textarea {
   transition: border-color 0.2s ease;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: var(--accent-color);
   outline: none;
 }
@@ -126,7 +123,6 @@ button:hover {
   background: #0056b3;
 }
 
-
 body.dark-mode input,
 body.dark-mode textarea {
   background: #333;
@@ -138,9 +134,10 @@ body.dark-mode li {
   background: #333;
 }
 
-
 @media (max-width: 1024px) {
-  main, .container {
+
+  main,
+  .container {
     grid-template-columns: 1fr;
     padding: 0 15px;
   }
@@ -154,13 +151,13 @@ body.dark-mode li {
   }
 }
 
-
 @media (max-width: 600px) {
   body {
     font-size: 15px;
   }
 
-  main, .container {
+  main,
+  .container {
     margin: 20px auto;
     gap: 15px;
   }
@@ -173,11 +170,12 @@ body.dark-mode li {
     font-size: 1.25rem;
   }
 
-  input, textarea, button {
+  input,
+  textarea,
+  button {
     font-size: 0.95rem;
   }
 }
-
 
 .card {
   opacity: 0;

@@ -22,13 +22,11 @@ body {
   transition: 0.3s ease;
 }
 
-
 .container {
   max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
 }
-
 
 header {
   display: flex;
@@ -71,7 +69,6 @@ header {
   opacity: 0.9;
 }
 
-
 .card {
   background: var(--card-bg);
   border-radius: 12px;
@@ -79,7 +76,6 @@ header {
   padding: 20px;
   margin-top: 20px;
 }
-
 
 .skills ul {
   list-style: none;
@@ -94,7 +90,6 @@ header {
   margin: 5px 0;
   text-align: center;
 }
-
 
 .projects-grid {
   display: grid;
@@ -149,6 +144,7 @@ button {
 button:hover {
   background: #0056b3;
 }
+
 .social {
   color: white;
   border-radius: 10px;
@@ -158,6 +154,7 @@ button:hover {
   border: none;
   transition: all 0.3s ease;
 }
+
 #social {
   display: flex;
   justify-content: center;
@@ -171,47 +168,62 @@ button:hover {
   margin-top: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .twitter {
   background-color: black;
-}     
+}
+
 .twitter:hover {
   background-color: black;
   transform: scale(1.05);
-}  
-.snapchat { 
-  background-color: #FFFC00; 
-}  
+}
+
+.snapchat {
+  background-color: #FFFC00;
+}
+
 .snapchat:hover {
   background-color: #FFFC00;
   transform: scale(1.05);
 }
-.instagram { 
-  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);;
+
+.instagram {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  ;
 }
+
 .instagram:hover {
-  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  ;
   transform: scale(1.05);
 }
+
 .facebook {
-  background-color: #1877F2; 
-}  
+  background-color: #1877F2;
+}
+
 .facebook:hover {
   background-color: #1877F2;
 }
-.tiktok { 
-  background-color: black; 
+
+.tiktok {
+  background-color: black;
 }
+
 .tiktok:hover {
   background-color: black;
   transform: scale(1.05);
 }
+
 .whatsapp {
   background-color: green;
-} 
+}
+
 .whatsapp:hover {
   background-color: green;
   transform: scale(1.05);
 }
+
 #social:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -223,11 +235,11 @@ footer {
   font-size: 0.9rem;
 }
 
-
 @media (max-width: 768px) {
   header {
     flex-direction: column;
   }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -237,8 +249,9 @@ footer {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   #social {
-    width: 30%; 
+    width: 30%;
     margin-left: 30%;
   }
 }
