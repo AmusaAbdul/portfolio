@@ -89,6 +89,12 @@ header {
   border-radius: 5px;
   margin: 5px 0;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills li:hover {
+  transform: translateY(-2px);
 }
 
 .projects-grid {
@@ -204,6 +210,7 @@ button:hover {
 
 .facebook:hover {
   background-color: #1877F2;
+  transform: scale(1.05);
 }
 
 .tiktok {

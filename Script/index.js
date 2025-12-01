@@ -1,23 +1,45 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector(".hamburger");
-    const mobileNav = document.querySelector(".nav-links.mobile");
-    const navLinks = document.querySelectorAll(".nav-links.mobile li");
-    hamburger.addEventListener("click", () => { mobileNav.classList.toggle("active");
-        hamburger.classList.toggle("open") });
-    document.addEventListener("click", (e) => { if (!mobileNav.contains(e.target) && !hamburger.contains(e.target)) { mobileNav.classList.remove("active");
-            hamburger.classList.remove("open") } });
-    navLinks.forEach(link => { link.addEventListener("click", () => { mobileNav.classList.remove("active");
-            hamburger.classList.remove("open") }) });
-    document.querySelector(".book").addEventListener("click", () => { window.location.href = "Pages/Booking.html" });
-    document.getElementById("year").textContent = new Date().getFullYear();
-    const contactForm = document.querySelector(".contact-form");
-    if (contactForm) { contactForm.addEventListener("submit", (e) => { e.preventDefault();
-            alert("Message sent!");
-            contactForm.reset() }) }
-    document.querySelector(".placeholder-btn").addEventListener("click", () => { alert("You have suscribed succesfully.") });
-    document.querySelector(".instagram") ? .addEventListener("click", () => { window.open("https://www.instagram.com/ikemi_concept?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "_blank", "noopener,noreferrer") });
-    document.querySelector(".whatsapp") ? .addEventListener("click", () => { window.open("https://wa.me/23409055444513   ", "_blank", "noopener,noreferrer") });
-    document.querySelector(".x") ? .addEventListener("click", () => { window.open("", "_blank", "noopener,noreferrer") });
-    document.querySelector(".tiktok") ? .addEventListener("click", () => { window.open("https://www.tiktok.com/@glambyikemi?_r=1&_t=ZS-91Z18PVwivK", "_blank", "noopener,noreferrer") });
-    document.querySelector(".snapchat") ? .addEventListener("click", () => { window.open("https://snapchat.com/t/9GETyoxN", "_blank", "noopener,noreferrer") })
-})
+function updateTime() {
+  const timeElement = document.querySelector('[data-testid="test-user-time"]');
+  if (!timeElement) return;
+
+  const now = new Date();
+  timeElement.textContent = now.toLocaleTimeString();
+}
+updateTime();
+setInterval(updateTime, 1000);
+
+const darkModeBtn = document.getElementById('dark-mode-btn');
+if (darkModeBtn) {
+  darkModeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    darkModeBtn.textContent = document.body.classList.contains('dark-mode')
+      ? '☀️ Light Mode'
+      : '🌙 Dark Mode';
+  });
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.querySelector('.twitter')?.addEventListener('click', () => {
+  window.open('https://x.com/brunolinlcoln?s=21', '_blank', 'noopener,noreferrer');
+});
+
+document.querySelector('.snapchat')?.addEventListener('click', () => {
+  window.open('https://snapchat.com/t/t9sOUN0b', '_blank', 'noopener,noreferrer');
+});
+
+document.querySelector('.instagram')?.addEventListener('click', () => {
+  window.open('https://www.instagram.com/slime_bruno8?igsh=bzA0M2kxbG9lNHp2&utm_source=qr', '_blank', 'noopener,noreferrer');
+});
+
+document.querySelector('.facebook')?.addEventListener('click', () => {
+  window.open('https://www.facebook.com/share/1CM8rFF9Gn/?mibextid=wwXIfr', '_blank', 'noopener,noreferrer');
+});
+
+document.querySelector('.tiktok')?.addEventListener('click', () => {
+  window.open('https://www.tiktok.com/@abdullah08138?_t=ZS-90spT6CQflS&_r=1', '_blank', 'noopener,noreferrer');
+});
+
+document.querySelector(".whatsapp")?.addEventListener("click", () => {
+  window.open("https://wa.me/23408156345656", "_blank", "noopener,noreferrer");
+});
