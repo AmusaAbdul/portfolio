@@ -1,0 +1,262 @@
+:root {
+    --bg: #f9f9f9;
+    --text: #222;
+    --card-bg: #fff;
+    --accent: #007bff;
+}
+
+body.dark-mode {
+    --bg: #121212;
+    --text: #f5f5f5;
+    --card-bg: #1e1e1e;
+    --accent: #4da3ff;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    transition: 0.3s ease;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+header.container.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navlist {
+    margin: 0 10px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navlist:hover {
+    text-decoration: underline;
+}
+
+.dark-mode-btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dark-mode-btn:hover {
+    opacity: 0.9;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.skills ul {
+    padding: 0;
+    list-style: none;
+}
+
+.skills ul li {
+    background-color: var(--accent);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills ul li:hover {
+    transform: translateY(-2px);
+    background: var(--accent);
+}
+
+.projects-grid {
+    display: grid;
+    gap: 15px;
+}
+
+.projects-grid article {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-grid article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.projects-grid a {
+    display: inline-block;
+    margin-top: 5px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fafafa;
+}
+
+button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.social {
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.twitter {
+    background-color: black;
+}
+
+.twitter:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+.snapchat {
+    background-color: #FFFC00;
+}
+
+.snapchat:hover {
+    background-color: #FFFC00;
+    transform: scale(1.05);
+}
+
+.instagram {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    ;
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    ;
+    transform: scale(1.05);
+}
+
+.facebook {
+    background-color: #1877F2;
+}
+
+.facebook:hover {
+    background-color: #1877F2;
+    transform: scale(1.05);
+}
+
+.tiktok {
+    background-color: black;
+}
+
+.tiktok:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+.whatsapp {
+    background-color: green;
+}
+
+.whatsapp:hover {
+    background-color: green;
+    transform: scale(1.05);
+}
+
+#social:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #social {
+        width: 30%;
+        margin-left: 30%;
+    }
+}
