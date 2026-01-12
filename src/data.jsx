@@ -52,7 +52,9 @@ const projects = [
         id: 2,
         name: "Streaming Website",
         paragraph: "A website where you get to watch any genre of movie built with React also responsive",
-        link: "https://slime-naija-i36a-1badpy9og-amusa-abdullahs-projects.vercel.app/"
+        link:"https://slime-naija-r86y.vercel.app/"
+        
+        
 
     }
 ]
