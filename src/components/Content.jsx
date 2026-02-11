@@ -32,7 +32,9 @@ function Content() {
                         key={educate.id}
                         title={educate.title}
                         degree={educate.degree}
+                        school={educate.school}
                         courseWork={educate.courseWork}
+                        focus={educate.focus}
                     />
                 ))}
             </div>
