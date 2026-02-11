@@ -2,7 +2,7 @@ const about =  [
     {
         id: 1,
         header: "About Me",
-        paragraph: "Hi, I’m Amusa Abdullah, a passionate and detail-oriented frontend developer who enjoys building modern, responsive, and user-friendly web experiences. I focus on writing clean, scalable code and turning ideas into intuitive interfaces that solve real problems. I’m driven by continuous learning and enjoy exploring new technologies while improving my problem solving skills.I’m particularly interested in UI / UX design, performance, and building products that deliver real value. Outside of work, I build personal projects, contribute to open - source when possible, and stay connected with the tech community through meetups and online learning."
+        paragraph: "Hi, I’m Amusa Abdullah, a passionate and detail-oriented frontend developer who enjoys building modern, responsive, and user-friendly web experiences. I focus on writing clean, scalable code and turning ideas into intuitive interfaces that solve real problems. I’m driven by continuous learning and enjoy exploring new technologies while improving my problem solving skills.I’m particularly interested in UI / UX design, performance, and building products that deliver real value. Outside of work, I build personal projects, watch football games, play video games, contribute to open source when possible, and stay connected with the tech community through meetups and online learning."
     }
 ]
 
